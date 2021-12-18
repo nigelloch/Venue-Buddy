@@ -6,35 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>API Project</title>
+  <title>Venue-Buddy</title>
 </head>
 
 <body class="flex-column min-100-vh">
   <header class="hero">
     <h1 class="app-title"><i class="fab fa-github"></i>Venue-Buddy</h1>
-    <p>Search for Music Venues based on Zipcode</p>
   </header>
-
 
   <main class="flex-row justify-space-between">
     <div class="col-12 col-md-4">
-
       <div class="card">
         <h3 class="card-header text-uppercase">Search By Zipcode</h3>
         <form id="user-form" class="card-body">
           <label class="form-label" for="zipcode">Zipcode</label>
-          <input name="username" id="username" type="text" autofocus="true" class="form-input" />
+          <input name="username" placeholder="Your Zipcode" id="username" type="text" autofocus="true" class="form-input" />
           <button type="submit" class="btn">Search</button>
         </form>
       </div>
     </div>
+    
+    <section id="table">
+      <table>
+        <thead>
+          <th>Time</th>
+          <th>Venue</th>
+          <th>Performers</th>
+          <th>Price</th>
+          <th>Location</th>
+        </thead>
+        <tbody id= "venue-table-body">
 
-    <div class="col-12 col-md-8">
-      <h2 class="subtitle">Venues <span id="restaurants-search-term"></span></h2>
-      <div id="repos-container" class="list-group">
-
+        </tbody>
+      </table>
+    </section>
+    <footer class="center-align">
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
       </div>
-    </div>
+    </footer>
   </main>
 
   <script src="./assets/js/homepage.js"></script>
