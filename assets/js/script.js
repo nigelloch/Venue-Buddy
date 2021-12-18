@@ -1,16 +1,23 @@
-var myArray = []
-function buildTable(data){
-    var table = document.getElementById('venue-table-body')
+var myArray = [];
 
-    for(var i = 0; i < data.length; i++){
-        var row = <tr>
-                    <td>${data[i].time}</td>
-                    <td>${data[i].venue}</td>
-                    <td>${data[i].price}</td>
-                    <td>${data[i].location}</td>
-                  </tr>
-        table.innerHTML += row
-    }
+//append data into the table
+function buildTable(data) {
+  var table = document.getElementById("venue-table-body");
+
+  table.innerHTML = ''
+
+  for (var i = 0; i < data.length; i++) {
+    var row = (
+      <tr>
+        <td>${data[i].time}</td>
+        <td>${data[i].venue}</td>
+        <td>${data[i].price}</td>
+        <td>${data[i].location}</td>
+      </tr>
+    );
+    table.innerHTML += row;
+  }
 }
 
-buildTable(myArray)
+buildTable(myArray);
+

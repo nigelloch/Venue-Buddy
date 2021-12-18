@@ -1,32 +1,60 @@
 *{
     font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+header {
+    padding: 30px 35px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-image: url("../images/festival.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+  }
+  
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: #78408a;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
 .content-table{
     border-collapse: collapse;
-    margin :25px 0;
     font-size: 0.9em;
-    min-width: 400px;
-    border-radius: 5px 5px 0 0;
+    width: 80%; 
+    border-radius: 12px 12px 0 0;
+    border-spacing: 0;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .content-table thead tr{
-    background-color: #009879;
-    color: #ffffff;
+    background-color: #ba68c8;
+    color: #fafafa;
     text-align: left;
-    font-weight: bold;
+    font-family: 'Open Sans',Sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
 }
 
 .content-table th,
 .content-table td{
-    padding: 12px 15px;
+    padding: 15px 20px;
+    text-align: center;
 }
 
 .content-table tbody tr{
     border-bottom: 1px solid #dddddd;
 }
 
-.content-table tbody tr:last-of-type{
-    border-bottom: 2px solid #009879;
-}
+

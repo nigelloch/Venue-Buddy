@@ -1,61 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Venue-Buddy</title>
+  </head>
+  
+  <body class="flex-column min-100-vh">
+    <div class="filter"></div>
+    <!--start of header-->
+    <header class="hero">
+      <h1 class="app-title"><i class="fab fa-github"></i>VENUE BUDDY</h1>
+    </header>
+    <!--end of header-->
+    <!--start of find venue by zipcode-->
+    <main class="flex-row justify-space-between">
+      <section class="col-12 col-md-4">
+        <div class="card">
+          <h3 class="card-header text-uppercase">
+            Search Music Venues Near By Zipcode
+          </h3>
+          <form id="user-form" class="card-body">
+            <label class="form-label" for="zipcode">Zipcode</label>
+            <input
+              name="username"
+              placeholder="Your Zipcode"
+              id="username"
+              type="text"
+              autofocus="true"
+              class="form-input"
+            />
+            <button type="submit" class="btn">Search</button>
+          </form>
+        </div>
+      </section>
+      <!--end of find venue by zipcode-->
+      <!--start of table-->
+      <section id="table">
+        <table class="content-table">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Venue</th>
+              <th>Price</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody id="venue-table-body">
+            <tr>
+              <td>asd</td>
+              <td>asd</td>
+              <td>asd</td>
+              <td>asdfsadf</td>
+            </tr>
+            <tr>
+              <td>asd</td>
+              <td>asd</td>
+              <td>asd</td>
+              <td>asdfsadf</td>
+            </tr>
+            <tr>
+              <td>asd</td>
+              <td>asd</td>
+              <td>asd</td>
+              <td>asdfsadf</td>
+            </tr>
+            <tr>
+              <td>asd</td>
+              <td>asd</td>
+              <td>asd</td>
+              <td>asdfsadf</td>
+            </tr>
+            <tr>
+              <td>asd</td>
+              <td>asd</td>
+              <td>asd</td>
+              <td>asdfsadf</td>
+            </tr>
+            <tr>
+              <td>asd</td>
+              <td>asd</td>
+              <td>asd</td>
+              <td>asdfsadf</td>
+            </tr>
+            <tr>
+              <td>asd</td>
+              <td>asd</td>
+              <td>asd</td>
+              <td>asdfsadf</td>
+            </tr>
+            <tr>
+              <td>asd</td>
+              <td>asd</td>
+              <td>asd</td>
+              <td>asdfsadf</td>
+            </tr>
+            <tr>
+              <td>asd</td>
+              <td>asd</td>
+              <td>asd</td>
+              <td>asdfsadf</td>
+            </tr>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Venue-Buddy</title>
-</head>
+          </tbody>
+        </table>
+      </section>
+      <!--end of table-->
+      <!--start of pagination-->
+      <footer class="center-align">
+        <div class="pagination">
+          <a href="#">&laquo;</a>
+          <a href="#">1</a>
+          <a class="active" href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">&raquo;</a>
+        </div>
+      </footer>
+      <!--end of pagination-->
+    </main>
 
-<body class="flex-column min-100-vh">
-  <header class="hero">
-    <h1 class="app-title"><i class="fab fa-github"></i>Venue-Buddy</h1>
-  </header>
-
-  <main class="flex-row justify-space-between">
-    <section class="col-12 col-md-4">
-      <div class="card">
-        <h3 class="card-header text-uppercase">Search Music Venues Near By Zipcode</h3>
-        <form id="user-form" class="card-body">
-          <label class="form-label" for="zipcode">Zipcode</label>
-          <input name="username" placeholder="Your Zipcode" id="username" type="text" autofocus="true" class="form-input" />
-          <button type="submit" class="btn">Search</button>
-        </form>
-      </div>
-    </section>
-    
-    <section id="table">
-      <table class="content-table">
-        <thead>
-          <tr>
-            <th>Time</th>
-            <th>Venue</th>
-            <th>Price</th>
-            <th>Location</th>
-          </tr>
-        </thead>
-        <tbody id="venue-table-body">
-         
-        </tbody>
-      </table>
-    </section>
-    <footer class="center-align">
-      <div class="pagination">
-        <a href="#">&laquo;</a>
-        <a href="#">1</a>
-        <a class="active" href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">6</a>
-        <a href="#">&raquo;</a>
-      </div>
-    </footer>
-  </main>
-
-  <script src="./assets/js/homepage.js"></script>
-</body>
-
+    <script src="./assets/js/homepage.js"></script>
+  </body>
 </html>
