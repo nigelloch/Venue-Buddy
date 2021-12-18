@@ -15,28 +15,52 @@
   </header>
 
   <main class="flex-row justify-space-between">
-    <div class="col-12 col-md-4">
+    <section class="col-12 col-md-4">
       <div class="card">
-        <h3 class="card-header text-uppercase">Search By Zipcode</h3>
+        <h3 class="card-header text-uppercase">Search Music Venues Near By Zipcode</h3>
         <form id="user-form" class="card-body">
           <label class="form-label" for="zipcode">Zipcode</label>
           <input name="username" placeholder="Your Zipcode" id="username" type="text" autofocus="true" class="form-input" />
           <button type="submit" class="btn">Search</button>
         </form>
       </div>
-    </div>
+    </section>
     
     <section id="table">
-      <table>
+      <table class="content-table">
         <thead>
-          <th>Time</th>
-          <th>Venue</th>
-          <th>Performers</th>
-          <th>Price</th>
-          <th>Location</th>
+          <tr>
+            <th>Time</th>
+            <th>Venue</th>
+            <th>Price</th>
+            <th>Location</th>
+          </tr>
         </thead>
-        <tbody id= "venue-table-body">
-
+        <tbody id="venue-table-body">
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
         </tbody>
       </table>
     </section>
