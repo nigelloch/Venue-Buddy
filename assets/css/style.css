@@ -35,7 +35,7 @@ header h1 {
   background-position: center center;
 }
 .banner-area h2{
-  padding-top: 8%;
+  padding-top: 3%;
   font-size: 32px;
   font-family: 'BigNoodleTitling', sans-serif;
   text-transform: uppercase;
@@ -75,27 +75,32 @@ header h1 {
   box-shadow: 0 0 10px white;
   margin-left: auto;
   margin-right: auto;
-  background: #eeeeee;
+  background: #d4d4d4;
+  text-align: center;
+  border: solid;
 }
 
 .content-table thead tr{
   background-color: #262626;
   color: whitesmoke;
-  text-align: left;
   font-family: 'Open Sans',Sans-serif;
   font-weight: 200;
   text-transform: uppercase;
-  border-bottom: black 2px solid
+  border-bottom: #262626 2px solid
 }
 
 .content-table th,
 .content-table td{
   padding: 15px 20px;
-  text-align: center;
+  font-family: 'BigNoodleTitling', sans-serif;
+  letter-spacing: 1.5px;
 }
 
 .content-table tbody tr{
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #262626;
+}
+.content-table tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
 }
 
 button{
