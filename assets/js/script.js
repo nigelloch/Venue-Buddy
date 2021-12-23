@@ -26,7 +26,7 @@ function getLocation(lat,long){
     var radius = document.getElementById("radius").value
     console.log(radius)
 
-    // fetch user zip code using lat/long from navigator.geolocation
+    // #1 fetch user zip code using lat/long from navigator.geolocation
     fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${long}&key=${googleApiKey}`)
 
     .then(response => response.json())
@@ -34,7 +34,7 @@ function getLocation(lat,long){
         // pull down user zip code from blob
         var zipCode = data.results[0].address_components[6].long_name
 
-    // fetch seat geek venue/show information using the user zip code and radius
+    // #2 fetch seat geek venue/show information using the user zip code and radius
      fetch("https://api.seatgeek.com/2/events?geoip=" + zipCode + "&range=" + radius + "mi&client_id=" + seatGeekApi + "&per_page=25")
             .then(response => response.json())
             .then(data => {
