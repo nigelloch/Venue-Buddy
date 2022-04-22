@@ -1,5 +1,5 @@
 
-var googleApiKey = "AIzaSyDW9m-QeI0q_p6yQZ_vpMvfuuwxTOPBoOc"
+var googleApiKey = "AIzaSyDdRMo-lh3_1v4axo2JEIer16-_L3_9jts"
 
 var seatGeekApi = 'MjQ5NjgyNzZ8MTYzOTcwODEzMS4yNTQzNDE0'
 
@@ -36,9 +36,10 @@ function getLocation(lat,long){
 
     .then(response => response.json())
     .then(data => {
+        console.log(data)
         // pull down user zip code from blob
         var zipCode = data.results[0].address_components[6].long_name
-
+        console.log(zipCode)
     // #2 fetch seat geek venue/show information using the user zip code and radius
      fetch("https://api.seatgeek.com/2/events?geoip=" + zipCode + "&range=" + radius + "mi&client_id=" + seatGeekApi + "&per_page=25")
             .then(response => response.json())
