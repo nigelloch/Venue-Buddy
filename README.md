@@ -7,6 +7,6 @@ We have not yet developed localStorage utilization. We plan to add the ability t
 
 The application is deployed here:   https://michaelcmaresco.github.io/Venue-Buddy/
 
-![alt text](./venue-buddy/assets/images/venuebuddy.jpg)
+![alt text](./assets/images/venuebuddy.jpg)
 
 
