@@ -5,6 +5,11 @@ var seatGeekApi = 'MjQ5NjgyNzZ8MTYzOTcwODEzMS4yNTQzNDE0'
 
 var locationBtn = document.querySelector("#search-btn")
 
+var paginationEl = document.getElementById("#pagination")
+
+// var getData = document.getElementById("#username")
+//     if (values)
+
     // get user lat/long
 var searchcurrentLocation = function(e) {
     e.preventDefault()
@@ -26,7 +31,7 @@ function getLocation(lat,long){
     var radius = document.getElementById("radius").value
     console.log(radius)
 
-    // fetch user zip code using lat/long from navigator.geolocation
+    // #1 fetch user zip code using lat/long from navigator.geolocation
     fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${long}&key=${googleApiKey}`)
 
     .then(response => response.json())
@@ -34,7 +39,7 @@ function getLocation(lat,long){
         // pull down user zip code from blob
         var zipCode = data.results[0].address_components[6].long_name
 
-    // fetch seat geek venue/show information using the user zip code and radius
+    // #2 fetch seat geek venue/show information using the user zip code and radius
      fetch("https://api.seatgeek.com/2/events?geoip=" + zipCode + "&range=" + radius + "mi&client_id=" + seatGeekApi + "&per_page=25")
             .then(response => response.json())
             .then(data => {
@@ -94,6 +99,7 @@ function getLocation(lat,long){
                          anchorLink.textContent = "Buy Tickets!"
                          purchaseColumn.appendChild(anchorLink)
 
+
                     // creates rows for returned seat geek data
                     tableRow.appendChild(timeColumn);
                     tableRow.appendChild(venueColumn);
@@ -101,8 +107,9 @@ function getLocation(lat,long){
                     tableRow.appendChild(locationColumn);
                     tableRow.appendChild(purchaseColumn);
                     document.getElementById("venue-table-body").appendChild(tableRow)
-                }
 
+                    
+                }
             })
 })
 }
