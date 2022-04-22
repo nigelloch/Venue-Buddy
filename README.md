@@ -1,4 +1,4 @@
-# API-group-assignment
+# VENUE BUDDY
 
 
 For our project, our team created Venue Buddy. The application utilizes a google location API to find the users location and then accesses the SeatGeek API to show the user events in their area.
